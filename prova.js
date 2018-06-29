@@ -32,6 +32,9 @@ var dead = false;
 var velocita = 1;
 var alternanza = 0;
 var decisione;
+window.addEventListener("resize", () => {
+    resizeCanvas(window.innerWidth, window.innerHeight);
+})
 function draw() {
     aa();
     time = millis();
