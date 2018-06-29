@@ -5,7 +5,7 @@ var larghezza = window.innerWidth;
 var altezza = window.innerHeight;
 function setup() {
     var myCanvas = createCanvas(larghezza, altezza);
-    myCanvas.parent('container')
+    myCanvas.parent('container');
     for (var i = 0; i < 30; i++) {
         array.push({
             x: Math.floor(Math.random() * larghezza + 200),
