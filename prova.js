@@ -21,8 +21,8 @@ function setup() {
     }
 }
 var time;
-var x = 500;
-var y = 100;
+var x = larghezza / 2;
+var y = altezza / 2;
 var timing = 100;
 var timer = 0;
 var duration = 0;
