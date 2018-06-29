@@ -150,7 +150,7 @@ function add_score() {
         body: JSON.stringify({
             fields: {
                 Score: (duration),
-                Nickname: localStorage.getItem("nickname"),
+                Player: localStorage.getItem("nickname"),
                 Date: (new Date()).toISOString().slice(0, 10),
             }
         })
