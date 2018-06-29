@@ -1,0 +1,35 @@
+<html>
+
+<head>
+    <link rel="stylesheet" type="text/css" href="css/css.css">
+    <script>
+        function a() {
+            document.getElementById("score").innerHTML = localStorage.getItem("punteggio");
+        }
+        function go() {
+            window.open("index.html", "_self");
+        }
+        function ritorna() {
+            window.open("prova.html", "_self");
+        }
+    </script>
+</head>
+
+<body onLoad="a()">
+    <div class="div">
+        <h1>PUNTEGGIO: </h1>
+        <h1 id="score"></h1>
+        <button onClick="ritorna()">rigioca</button>
+        <br>
+        <br>
+        <br>
+        <button onClick="go()">torna alla home</button>
+        <br>
+        <h1>RESULT:</h1>
+        <br>
+        <iframe class="airtable-embed" src="https://airtable.com/embed/shrAN3hli5dDGIkN2?backgroundColor=purple" frameborder="0"
+            onmousewheel="" width="100%" height="533" style="background: transparent; border: 1px solid #ccc;"></iframe>
+    </div>
+</body>
+
+</html>
