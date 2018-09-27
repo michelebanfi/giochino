@@ -6,19 +6,6 @@ var altezza = window.innerHeight;
 function setup() {
     var myCanvas = createCanvas(larghezza, altezza);
     myCanvas.parent('container');
-    for (var i = 0; i < 30; i++) {
-        array.push({
-            x: Math.floor(Math.random() * larghezza + 200),
-            y: Math.floor(Math.random() * altezza),
-            w: Math.floor((Math.random() * 300) + 15),
-            h: Math.floor((Math.random() * 100) + 15),
-            r: 0,
-            g: 255,
-            b: 0,
-            limit: 0,
-            id: String(Math.random())
-        });
-    }
 }
 var time;
 var x = larghezza / 2;
